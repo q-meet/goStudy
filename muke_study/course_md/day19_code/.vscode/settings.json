@@ -1,0 +1,14 @@
+{
+    "go.buildOnSave": "workspace",
+    "go.lintOnSave": "package",
+    "go.vetOnSave": "workspace",
+    "go.coverOnSave": false,
+    "go.lintTool": "golint",
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.gocodePackageLookupMode": "go",
+    "go.inferGopath": false,
+    "go.docsTool": "gogetdoc",
+    "go.formatTool": "goreturns",
+}

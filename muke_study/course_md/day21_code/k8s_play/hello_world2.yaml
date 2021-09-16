@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-deployment2
+  labels:
+    app: hello-world2
+spec:
+  selector:
+    matchLabels:
+      app: hello-world2
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello-world2
+    spec:
+      containers:
+        - name: hello-world2
+          image: meetdocker2020/helloworld:v0.0.03
+          ports:
+            - containerPort: 11114

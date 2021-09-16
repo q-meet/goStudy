@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world2
+spec:
+  type: LoadBalancer
+  selector:
+    app: hello-world2
+  ports:
+    - port: 81
+      targetPort: 11114
