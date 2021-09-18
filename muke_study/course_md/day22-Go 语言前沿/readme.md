@@ -15,7 +15,7 @@
 * 由 caller 提供参数和返回值的栈空间
 * 在 callee 中获取参数时，使用 FP 伪寄存器(实践结果是 SP)+偏移量找到参数和返回值
 
-![callFunc](file/callFunc.png)
+![title callFunc](file/callFunc.png)
 
 ### 新版调用规约(Go 1.17)
 
@@ -97,7 +97,7 @@
 
 ![FloodTypePrinciple](file/FloodTypePrinciple.png)
 
-![Go 1.17 泛型尝鲜](http://word.czqlm.top/index.php/2021/08/18/go-1-17-%e6%b3%9b%e5%9e%8b%e5%b0%9d%e9%b2%9c/)
+[Go 1.17 泛型尝鲜](http://word.czqlm.top/index.php/2021/08/18/go-1-17-%e6%b3%9b%e5%9e%8b%e5%b0%9d%e9%b2%9c/)
 
 ## go mod
 
@@ -215,7 +215,7 @@
 
 ![golangOrioisal](file/golangOrioisal.png)
 
-![https://github.com/golang/proposal](https://github.com/golang/proposal)
+[https://github.com/golang/proposal](https://github.com/golang/proposal)
 
 ## ReferencesXMM 寄存器
 
