@@ -15,7 +15,7 @@
 * 由 caller 提供参数和返回值的栈空间
 * 在 callee 中获取参数时，使用 FP 伪寄存器(实践结果是 SP)+偏移量找到参数和返回值
 
-![RUNOOB callFunc](file/callFunc.png)
+![RUNOOB callFunc](file/callFunc.png "RUNOOB")
 
 ### 新版调用规约(Go 1.17)
 
