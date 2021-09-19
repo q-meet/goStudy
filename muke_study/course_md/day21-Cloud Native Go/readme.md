@@ -188,7 +188,7 @@
 * Service：k8s 内置的对微服务的抽象，一般包含多个 pod
 * Kubeproxy：定义网络规则，实现 k8s 内置的 service 流量截持
 
-![参考链接](https://jimmysong.io/blog/service-mesh-the-microservices-in-post-kubernetes-era/)
+[参考链接](https://jimmysong.io/blog/service-mesh-the-microservices-in-post-kubernetes-era/)
 
 ### K8s-其它概念
 
