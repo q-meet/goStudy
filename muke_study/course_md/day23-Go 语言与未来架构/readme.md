@@ -51,7 +51,7 @@
 2. 控制面：
     * Istio
 
-![alt lstioMesh](file/lstioMesh "lstioMesh")
+![alt lstioMesh](file/lstioMesh.png "lstioMesh")
 
 ### Service mesh 基本概念-xDS protocol
 
@@ -77,7 +77,7 @@ xDS 本质上是一套规范，只要遵守该规范，控制面和数据面都�
 * Envoy 的代码相当多且不易读，充满了 onXXX 的回调，如果碰到问题需要定位，临时读代码比较难
 * iptable 做流量劫持性能低下，又需要换用 cilium 之类的方式进行优化，⻔槛高
 
-![alt lstioMesh](file/lstioMesh "lstioMesh")
+![alt lstioMesh](file/lstioMesh.png "lstioMesh")
 
 ### Service mesh 部署
 
@@ -86,7 +86,7 @@ xDS 本质上是一套规范，只要遵守该规范，控制面和数据面都�
 * 接管应用与外部通信(envoy 用 iptables)
 * 对业务透明
 
-![alt envoy](file/lstioMesh "envoy")
+![alt envoy](file/lstioMesh.png "envoy")
 
 ```yaml
 apiversion: apps/vlbetal
