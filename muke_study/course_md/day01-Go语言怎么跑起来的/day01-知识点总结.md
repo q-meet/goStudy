@@ -49,7 +49,7 @@ P的本地runnext字段->P的local run queue-> global run queue, 多级队列减
 
 ### 展开说明 基本概念
 
-##### M(Machine)
+#### M(Machine)
 
 * M代表着真正的执行计算资源，可以认为他就是os thread(系统线程)
 * M是真正调度系统的执行者，每个M就像一个勤劳的工作者，总是从各种队列中找到可运行的G, 而且这样M的可以同时存在多个
@@ -66,7 +66,7 @@ P的本地runnext字段->P的local run queue-> global run queue, 多级队列减
 * 在G眼中只有P，P就是运行G的"CPU"。
 * 类似于两级线程
 
-## 队列
+### 队列
 
  goroutine处理有三个队列(多级队列减少锁竞争)
 

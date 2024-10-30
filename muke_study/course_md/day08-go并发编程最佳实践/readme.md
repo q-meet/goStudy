@@ -1,7 +1,9 @@
 # 并发编程与最佳实践
 
 ## 并发内置数据结构
+
 ### sync
+
 sync.Once
 
     sync.Once 只有一个方法，Do()
@@ -21,13 +23,15 @@ sync.Mutex
 sync.RWMutex
 sync.Map
 sync.Waitgroup
+
 ## 并发编程模式举例
+
 ## 常见的并发bug
+
 死锁
 map并发读写
 
 Channel 关闭 panic
 Channel closing principle
+
 ## 内存模型
-
-

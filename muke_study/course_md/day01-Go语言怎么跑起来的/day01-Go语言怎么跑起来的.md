@@ -167,6 +167,31 @@ G:goroutine，一个计算任务。由需要执行的代码和其上下文组成
 M:machine，系统线程，执行实体，想要在 CPU 上执行代码，必须有线程，与C语言中的线程相同，通过系统调用 clone 来创建
 P:processor，虚拟处理器，M 必须获得P才能执行代码，否则必须陷入休眠(后台监控线程除外)，你也可以将其理解为一种 token，有这个 token，才有在物理 CPU 核心上执行的权力。
 
+## 处理阻塞
+
+* 可以接管的阻塞: channel收发, 网络链接/读写, 加锁, select
+* 不可接管的阻塞: syscall, cgo, 长时间运行需要剥离P执行
+
+runtime 处理的阻塞（这6种阻塞都不会阻塞调度循环，底层一定是让这个G进入了某个结构体）
+![alt text](image-4.png)
+
+以下截图的这6种都是被怎么塞进结构体里面的
+
+![alt text](image-5.png)
+
+select channel 一个 goroutine 会被挂在多个sudog 上
+
+lock的情况
+![alt text](image-6.png)
+
+runtime无法处理的阻塞
+
+1. cgo
+![alt text](image-7.png)
+
+如果发生runtime无法处理的阻塞，那么会把当前绑定的P结构剥离掉 （sysmon:system moniter 每隔一段时间会自动执行）
+![alt text](image-8.png)
+
 ## 常用汇编 调用指令
 
 go从上层到底层都是使用go实现
